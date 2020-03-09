@@ -8,10 +8,10 @@ import {
 } from 'sequelize-typescript';
 
 @Table({
-    timestamps: true,
-    paranoid: true,
+    //timestamps: true,
+    //paranoid: true,
 })
-export class Book extends Model<Book> {
+export class Form001 extends Model<Form001> {
     @AllowNull(false)
     @PrimaryKey
     @AutoIncrement
