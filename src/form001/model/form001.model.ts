@@ -8,8 +8,8 @@ import {
 } from 'sequelize-typescript';
 
 @Table({
-    //timestamps: true,
-    //paranoid: true,
+    timestamps: true,
+    paranoid: true,
 })
 export class Form001 extends Model<Form001> {
     @AllowNull(false)
@@ -18,87 +18,87 @@ export class Form001 extends Model<Form001> {
     @Column
     o_id: number;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_no: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_date: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_year: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_purpose: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee1: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee2: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee3: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_numdoc: number;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_pricedoc: number;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee4: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee5: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_committee6: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_budgettype: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_budgetname: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_budgetdoc: number;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_approve: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_approver: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     staff_id: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_status: string;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_status_id: number;
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Column
     o_user: string;
 }

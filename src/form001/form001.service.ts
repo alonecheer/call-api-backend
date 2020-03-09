@@ -8,4 +8,8 @@ export class Form001Service {
     async getForm001(){
         return await this.form001.findAll();
     }
+    async addForm001(form001 : Form001){
+        return await this.form001.create(form001);
+    }
+
 }
