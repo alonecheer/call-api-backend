@@ -101,4 +101,8 @@ export class Form001 extends Model<Form001> {
     @AllowNull(true)
     @Column
     o_user: string;
+
+    @AllowNull(true)
+    @Column
+    o_test: string;
 }
