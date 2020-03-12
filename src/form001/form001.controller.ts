@@ -22,16 +22,18 @@ export class Form001Controller {
 
         const form001 = await this.form001Service.getForm001();
         response = {form001};
+        console.log(form001)
         return res.status(status).json(response);
     }
 
     @Post()
-    async addForm001(@Body('form001s') data, @Res() res){
+    async addForm001(@Body('form001') data, @Res() res){
         let status = HttpStatus.OK;
         let response = {};
 
-        const form001s = await this.form001Service.addForm001(data);
-        response = { form001s };
-        return res.status(status).json(response);
+        const form001 = await this.form001Service.addForm001(data);
+        console.log(data)
+        response = { form001 };
+        return res.status(status).json(response); 
     }
 }
