@@ -18,91 +18,88 @@ export class Form001 extends Model<Form001> {
     @Column
     o_id: number;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_no: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_date: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_year: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_purpose: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee1: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee2: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee3: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_numdoc: number;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_pricedoc: number;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee4: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee5: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_committee6: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_budgettype: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_budgetname: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_budgetdoc: number;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_approve: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_approver: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     staff_id: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_status: string;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_status_id: number;
 
-    @AllowNull(true)
+    @AllowNull(false)
     @Column
     o_user: string;
 
-    @AllowNull(true)
-    @Column
-    o_test: string;
 }
